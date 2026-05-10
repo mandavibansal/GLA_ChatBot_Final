@@ -12,6 +12,8 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from chatbot import GLAChatbot
 from embedder import index_exists
+from dotenv import load_dotenv
+load_dotenv()
 
 app = FastAPI(
     title="GLA Admission Chatbot API",
